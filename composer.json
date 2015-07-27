@@ -1,0 +1,13 @@
+{
+    "name": "vendor/flight-demo",
+    "description": "Description of project flight-demo.",
+    "authors": [
+        {
+            "name": "chriss",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "dev-master"
+    }
+}
