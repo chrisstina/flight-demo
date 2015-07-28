@@ -9,9 +9,9 @@ namespace backend\components;
  */
 class FileFlightsDataSource implements IFlightsDataSource {
     
-    public $sourceFile = '@webroot/task_xml.txt';
+    public $sourceFile = 'task_xml.txt'; /* впоследствии можно вынести в настройки модуля*/
     
     public function getData() {
-        return file_get_contents($this->sourceFile);
+        return file_get_contents(\Yii::$app->basePath . DIRECTORY_SEPARATOR . $this->sourceFile);
     }
 }
