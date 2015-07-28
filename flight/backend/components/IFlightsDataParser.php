@@ -1,10 +1,11 @@
 <?php
 
+namespace backend\components;
+
 /**
  *
  * @author chriss
  */
-interface IFlightsDataParser
-{
-    //put your code here
+interface IFlightsDataParser {
+    public function getFlightsData($xmlSource);
 }

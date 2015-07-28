@@ -60,6 +60,13 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
+        
+        $f = new \backend\components\SearchFlight();
+        $f->sendAndSave();
+        
+        exit;
+        
+        
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }

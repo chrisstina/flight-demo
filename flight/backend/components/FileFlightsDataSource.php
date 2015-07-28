@@ -9,7 +9,7 @@ namespace backend\components;
  */
 class FileFlightsDataSource implements IFlightsDataSource {
     
-    public $sourceFile = 'task_xml.xml';
+    public $sourceFile = '@webroot/task_xml.txt';
     
     public function getData() {
         return file_get_contents($this->sourceFile);
