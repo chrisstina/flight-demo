@@ -67,14 +67,4 @@ class Flights extends \yii\db\ActiveRecord
     {
         return new FlightsQuery(get_called_class());
     }
-    
-    public function beforeSave($insert) {
-        
-        // разруливаем аэропорты
-        
-        
-        
-        
-        parent::beforeSave($insert);
-    }
 }
